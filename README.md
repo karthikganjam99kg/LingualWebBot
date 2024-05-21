@@ -1,5 +1,6 @@
 Welcome to Lingual Web Bot - Query At your Click! - Pravaah Hackathon Challenge Conducted by Quadrant Technologies
 ----------------------------------------------------
+
 Project Structure:
 project/
 ├── static/
@@ -12,6 +13,7 @@ project/
 │   └── chat.html
 ├── app.py
 └── requirements.txt
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 Technology Stack:
 Front-end Technologies

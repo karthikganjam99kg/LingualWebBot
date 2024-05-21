@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <aside>
+            <header>
+                <input type="text" placeholder="search">
+            </header>
+            <ul id="userList">
+                <li data-user="SessionA" class="active">
+                    <img src="images/female_icon.png" alt="">
+                    <div>
+                        <h2>SessionA</h2>
+                        <h3>
+                            <span class="status green"></span> online
+                        </h3>
+                    </div>
+                </li>
+                <li data-user="SessionB">
+                    <img src="images/female_icon.png" alt="">
+                    <div>
+                        <h2>SessionB</h2>
+                        <h3>
+                            <span class="status green"></span> online
+                        </h3>
+                    </div>
+                </li>
+                <!-- Add more users as needed -->
+            </ul>
+        </aside>
+        <main>
+            <header>
+                <!-- Back navigation -->
+                <a href="index.html" class="back-link">
+                    <img src="images/home-icon-png-17.jpg" alt="Back">
+                </a>
+                <!-- Header content -->
+                <img src="images/female_icon.png" alt="">
+                <div>
+                    <h2 id="chatWith">Chat with Admin</h2>
+                </div>
+            </header>
+            <ul id="chat">
+                <!-- Chat messages will appear here -->
+            </ul>
+            <footer>
+                <textarea id="messageInput" placeholder="Type your message"></textarea>
+                <img src="images/translate_icon.png" alt="Translate" title="Translate">
+                <img src="images/read_aloud_icon.png" alt="Read Aloud" title="Read Aloud">
+                <img src="images/speak_icon.png" alt="Speak" title="Speak">
+                <div class="dropdown">
+                    <button class="dropbtn">Select a language</button>
+                    <select id="languageSelector" class="dropdown-content">
+                        <option value="english">English</option>
+                        <option value="hindi">हिन्दी</option>
+                        <option value="telugu">తెలుగు</option>
+                        <option value="arabic">العربية</option>
+                    </select>
+                </div>
+
+                <a href="#" id="sendMessage">Send</a>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Context Menu for Messages -->
+    <div id="contextMenu" class="context-menu">
+        <ul>
+            <li id="readAloudOption">Read Aloud</li>
+            <li id="translateOption">Translate
+                <ul id="languageList" class="language-list">
+                    <li data-lang="en">English</li>
+                    <li data-lang="te">Telugu</li>
+                    <li data-lang="hi">Hindi</li>
+                    <li data-lang="ar">Arabic</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
